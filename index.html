@@ -105,12 +105,18 @@ th{color:var(--muted);font-weight:500;width:38%;padding-right:12px}
 .shots figure{margin:0;min-width:0}
 .shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--rule)}
 .shots figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.settings-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.6fr) minmax(0,.6fr);gap:28px;align-items:start}
+.settings-grid figure{margin:0;min-width:0}
+.settings-grid img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--rule)}
+.settings-grid figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 footer{padding-block:36px;color:var(--muted);font-size:14px}
 
 @media (max-width:820px){
   .hero-grid,.split,.kit{grid-template-columns:minmax(0,1fr)}
   .steps,.facts{grid-template-columns:minmax(0,1fr)}
   .shots{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .settings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .settings-grid .checks{grid-column:1 / -1}
   .phone{width:min(240px,80%)}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -179,6 +185,24 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
       <div class="fact"><span class="num">1° = 111 km</span><span class="lbl"><span lang="en">why the 4-turn tilt calibration matters</span><span lang="sv">därför spelar kalibreringen med fyra vridningar roll</span></span></div>
     </div>
     <p class="note"><span lang="en">Needs a clear, dark sky. Light summer nights in the far north will not work. The beta test is how we find out what real phones and real skies give.</span><span lang="sv">Kräver klar och mörk himmel. Ljusa sommarnätter långt norrut fungerar inte. Betatestet är hur vi tar reda på vad riktiga telefoner och riktiga himlar ger.</span></p>
+  </div>
+</section>
+
+<section id="settings">
+  <div class="wrap">
+    <h2><span lang="en">Settings for the field</span><span lang="sv">Inställningar för fältet</span></h2>
+    <p class="sec-lede"><span lang="en">Everything is in one Settings dialog, opened from the gear on the start screen and the map. Advanced mode is off by default, so the app stays simple until you need more.</span><span lang="sv">Allt finns i en inställningsdialog som öppnas från kugghjulet på startskärmen och kartan. Avancerat läge är avstängt från början, så appen är enkel tills du behöver mer.</span></p>
+    <div class="settings-grid">
+      <ul class="checks">
+        <li><span lang="en"><b>Night mode.</b> Black and deep red at low brightness, so you keep your night vision.</span><span lang="sv"><b>Nattläge.</b> Svart och djuprött med låg ljusstyrka, så att du behåller mörkerseendet.</span></li>
+        <li><span lang="en"><b>Track.</b> Dead reckoning between star fixes, with your step length and a reminder to sync with the stars every 15 to 120 minutes.</span><span lang="sv"><b>Spåra.</b> Död räkning mellan stjärnfixarna, med din steglängd och en påminnelse om stjärnsynk var 15:e till 120:e minut.</span></li>
+        <li><span lang="en"><b>Advanced mode.</b> Adds Compare GPS on the map, so you can check a star fix against satellite navigation and spot jamming or spoofing. GPS comparisons also calibrate your step length.</span><span lang="sv"><b>Avancerat läge.</b> Lägger till Jämför GPS på kartan, så att du kan kontrollera stjärnfixen mot satellitnavigeringen och upptäcka störning eller förfalskning. Jämförelserna kalibrerar också din steglängd.</span></li>
+        <li><span lang="en"><b>Boat mode</b> (in Advanced mode). A 2-minute measurement with the main camera that copes with a rolling deck. It follows the stars frame by frame and warns you if the boat turns. At sea, Track uses compass course and the speed you enter in knots instead of steps.</span><span lang="sv"><b>Båtläge</b> (i Avancerat läge). En mätning på 2 minuter med huvudkameran som klarar sjögång. Den följer stjärnorna bild för bild och varnar om båten girar. Till sjöss använder Spåra kompasskursen och farten du anger i knop i stället för steg.</span></li>
+      </ul>
+      <figure><img src="img/settings-en-540.jpg" width="540" height="1080" alt="Starways settings: language, night mode, step length, star sync reminder, Advanced mode and Boat mode switched on, speed 5.0 knots" loading="lazy"><figcaption><span lang="en">Settings with Advanced mode and Boat mode on</span><span lang="sv">Inställningar med Avancerat läge och Båtläge påslagna</span></figcaption></figure>
+      <figure><img src="img/boat-mode-en-540.jpg" width="540" height="1080" alt="Boat mode measurement in night mode: 0:29 left, 60 star frames, locked on the stars, hold your course, yaw 0.0 degrees" loading="lazy"><figcaption><span lang="en">Boat mode: locked on the stars, hold your course</span><span lang="sv">Båtläge: låst på stjärnorna, håll kursen</span></figcaption></figure>
+    </div>
+    <p class="note"><span lang="en">Boat mode is experimental. It has been tested in simulation, not yet on a real boat. Hold a steady course and speed while it measures, and calibrate the sensors in harbour or on land first.</span><span lang="sv">Båtläget är experimentellt. Det är testat i simulering men ännu inte på en riktig båt. Håll stadig kurs och fart medan det mäter, och kalibrera sensorerna i hamn eller på land först.</span></p>
   </div>
 </section>
 
