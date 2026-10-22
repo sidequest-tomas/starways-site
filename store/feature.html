@@ -1,0 +1,68 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../fonts.css">
+<style>
+html,body{margin:0;width:1024px;height:500px;overflow:hidden;background:#070b18}
+#c{position:absolute;inset:0}
+.txt{position:absolute;left:72px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;width:480px}
+.eyebrow{font:500 15px "IBM Plex Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:#f2cf63;margin:0 0 10px}
+h1{font:400 92px/1 "Marcellus",Georgia,serif;color:#e6eaf5;margin:0;letter-spacing:.01em}
+.tag{font:400 32px/1.2 "Marcellus",Georgia,serif;color:#f2cf63;margin:18px 0 0}
+.sub{font:500 17px "IBM Plex Sans",sans-serif;color:#93a0c2;margin:22px 0 0;letter-spacing:.02em}
+</style></head><body>
+<svg id="c" width="1024" height="500" viewBox="0 0 1024 500"></svg>
+<div class="txt">
+  <p class="eyebrow" id="eb"></p>
+  <h1>Starways</h1>
+  <p class="tag" id="tg"></p>
+  <p class="sub" id="sb"></p>
+</div>
+<script>
+const L = new URLSearchParams(location.search).get('lang')||'en';
+const T = {en:['Offline star navigation','When all other navigation fails.','No GPS needed · No network · No tracking'],
+           sv:['Stjärnnavigering offline','När all annan navigering sviker.','Ingen GPS behövs · Inget nät · Ingen spårning']}[L];
+eb.textContent=T[0]; tg.textContent=T[1]; sb.textContent=T[2];
+const NS='http://www.w3.org/2000/svg', svg=document.getElementById('c');
+const el=(n,a,p=svg)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
+const defs=el('defs',{});
+const g1=el('radialGradient',{id:'glow',cx:'72%',cy:'45%',r:'60%'},defs);
+el('stop',{offset:'0','stop-color':'#16224a','stop-opacity':'1'},g1);el('stop',{offset:'1','stop-color':'#070b18','stop-opacity':'1'},g1);
+const g2=el('radialGradient',{id:'dotglow'},defs);
+el('stop',{offset:'0','stop-color':'#3b8cff','stop-opacity':'.45'},g2);el('stop',{offset:'1','stop-color':'#3b8cff','stop-opacity':'0'},g2);
+const lg=el('linearGradient',{id:'fade',x1:'0',x2:'1'},defs);
+el('stop',{offset:'0','stop-color':'#070b18','stop-opacity':'.92'},lg);el('stop',{offset:'.5','stop-color':'#070b18','stop-opacity':'.55'},lg);el('stop',{offset:'.75','stop-color':'#070b18','stop-opacity':'0'},lg);
+el('rect',{width:1024,height:500,fill:'url(#glow)'});
+// seeded background stars
+let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;
+for(let i=0;i<260;i++){const x=r()*1024,y=r()*500,m=r();el('circle',{cx:x,cy:y,r:(m<.9?0.5+m*0.7:1.3+m*0.6).toFixed(2),fill:'#e6eaf5',opacity:(0.25+r()*0.55).toFixed(2)})}
+// faint graticule
+for(let i=0;i<7;i++){el('path',{d:`M${560+i*75} 0 Q ${600+i*75} 250 ${560+i*75} 500`,stroke:'#22305a','stroke-width':1,fill:'none',opacity:.55})}
+for(let j=0;j<5;j++){el('path',{d:`M200 ${70+j*95} Q 640 ${35+j*95} 1024 ${60+j*95}`,stroke:'#22305a','stroke-width':1,fill:'none',opacity:.55})}
+el('rect',{width:1024,height:500,fill:'url(#fade)'});
+// Big Dipper + Polaris, gnomonic projection
+const S=[['Dubhe',11.062,61.75,1.8],['Merak',11.031,56.38,2.4],['Phecda',11.897,53.69,2.4],['Megrez',12.257,57.03,3.3],['Alioth',12.900,55.96,1.8],['Mizar',13.399,54.93,2.2],['Alkaid',13.792,49.31,1.9],['Polaris',2.530,89.26,2.0]];
+const ra0=12.0*15*Math.PI/180, de0=68*Math.PI/180;
+function proj(ra,de){ra*=15*Math.PI/180;de*=Math.PI/180;const c=Math.sin(de0)*Math.sin(de)+Math.cos(de0)*Math.cos(de)*Math.cos(ra-ra0);
+ return [-(Math.cos(de)*Math.sin(ra-ra0))/c, (Math.cos(de0)*Math.sin(de)-Math.sin(de0)*Math.cos(de)*Math.cos(ra-ra0))/c]}
+const P=S.map(a=>proj(a[1],a[2]));
+// rotate so the dipper sits nicely, then scale into right panel
+const ang=+(new URLSearchParams(location.search).get('ang')||5.4);
+const Q=P.map(([x,y])=>[x*Math.cos(ang)-y*Math.sin(ang), -(x*Math.sin(ang)+y*Math.cos(ang))]);
+const xs=Q.map(q=>q[0]),ys=Q.map(q=>q[1]);const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
+const BX=[600,975],BY=[50,340];const k=Math.min((BX[1]-BX[0])/(x1-x0),(BY[1]-BY[0])/(y1-y0));
+const R=Q.map(([x,y])=>[(BX[0]+BX[1])/2+(x-(x0+x1)/2)*k,(BY[0]+BY[1])/2+(y-(y0+y1)/2)*k]);
+console.log(JSON.stringify(R.map(q=>q.map(Math.round))));
+const line=(a,b,o,dash)=>el('line',{x1:R[a][0],y1:R[a][1],x2:R[b][0],y2:R[b][1],stroke:'#f2cf63','stroke-width':1.6,opacity:o,'stroke-dasharray':dash||'','stroke-linecap':'round'});
+[[0,1],[1,2],[2,3],[3,0],[3,4],[4,5],[5,6]].forEach(([a,b])=>line(a,b,.7));
+line(0,7,.45,'3 7');
+S.forEach((st,i)=>{const [x,y]=R[i],m=st[3];const rr=4.6-m*1.1;
+ el('circle',{cx:x,cy:y,r:rr*3.2,fill:'#f2cf63',opacity:.12});
+ el('circle',{cx:x,cy:y,r:rr,fill:i==7?'#fff6d6':'#fff'});
+});
+// lock rings on matched stars
+[0,1,4,6].forEach(i=>el('circle',{cx:R[i][0],cy:R[i][1],r:11,fill:'none',stroke:'#f2cf63','stroke-width':1.2,opacity:.75}));
+// blue dot
+const dx=800,dy=415;
+el('circle',{cx:dx,cy:dy,r:58,fill:'url(#dotglow)'});
+el('circle',{cx:dx,cy:dy,r:34,fill:'#3b8cff','fill-opacity':.12,stroke:'#3b8cff','stroke-opacity':.6,'stroke-width':1.2});
+el('circle',{cx:dx,cy:dy,r:11,fill:'#3b8cff',stroke:'#fff','stroke-width':3.5});
+</script></body></html>
