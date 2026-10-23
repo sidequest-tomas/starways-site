@@ -1,1 +1,50 @@
-[{"w": 1080, "h": 1920, "t": "Hitta din position med stjärnorna", "s": "Helt utan nät. Ingen GPS behövs.", "img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/1-start.png", "out": "/home/claude/starways-site/store/phone-sv/01-1-start.png"}, {"w": 1080, "h": 1920, "t": "Låst på himlen", "s": "Appen känner själv igen stjärnbilderna", "img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/2-lock-on.png", "out": "/home/claude/starways-site/store/phone-sv/02-2-lock-on.png"}, {"w": 1080, "h": 1920, "t": "En blå prick på kartan", "s": "Offlinekarta med osäkerhetscirkel", "img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/3-karta-okalibrerad.png", "out": "/home/claude/starways-site/store/phone-sv/03-3-karta-okalibrerad.png"}, {"w": 1080, "h": 1920, "t": "Spåra mellan stjärnfixarna", "s": "Steg och kompass fram till nästa stjärnsynk", "img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/5-spara.png", "out": "/home/claude/starways-site/store/phone-sv/04-5-spara.png"}, {"w": 1080, "h": 1920, "t": "Nattläge", "s": "Svart och djuprött, så att mörkerseendet består", "img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/6-nattlage-himlen.png", "out": "/home/claude/starways-site/store/phone-sv/05-6-nattlage-himlen.png"}]
+[
+{
+"w": 1080,
+"h": 1920,
+"t": "Hitta din position med stjärnorna",
+"s": "Helt utan nät. Ingen GPS behövs.",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/1-start.png",
+"out": "/home/claude/starways-site/store/phone-sv/01-start.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Låst på himlen",
+"s": "Appen känner själv igen stjärnbilderna",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/2-lock-on.png",
+"out": "/home/claude/starways-site/store/phone-sv/02-lock-on.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "En blå prick på kartan",
+"s": "Offlinekarta med en ärlig osäkerhetscirkel",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/3-karta-okalibrerad.png",
+"out": "/home/claude/starways-site/store/phone-sv/03-karta.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Kalibrera för en skarpare fix",
+"s": "Vrid telefonen fyra gånger",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/4-karta-kalibrerad.png",
+"out": "/home/claude/starways-site/store/phone-sv/04-karta-kalibrerad.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Spåra mellan stjärnfixarna",
+"s": "Steg och kompass fram till nästa stjärnsynk",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/5-spara.png",
+"out": "/home/claude/starways-site/store/phone-sv/05-spara.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Nattläge",
+"s": "Svart och djuprött, så att mörkerseendet består",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/6-nattlage-himlen.png",
+"out": "/home/claude/starways-site/store/phone-sv/06-nattlage.png"
+}
+]
