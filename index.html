@@ -120,6 +120,9 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
   .phone{width:min(240px,80%)}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.join{padding-left:1.2em;margin:0}
+.join li{margin:0 0 14px}
+.join .btn{margin-top:10px}
 </style>
 
 <div class="page" id="page">
@@ -222,7 +225,10 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
       <h3><span lang="en">Beta testers get it free, for good</span><span lang="sv">Betatestare får den gratis, för alltid</span></h3>
       <p><span lang="en">The first test runs for at least 14 days on Google Play. Everyone who takes part gets the full app on their Google account at no cost, also after launch.</span><span lang="sv">Det första testet pågår i minst 14 dagar på Google Play. Alla som är med får hela appen på sitt Google-konto utan kostnad, även efter lanseringen.</span></p>
       <p><span lang="en">What we ask: try a few star fixes on clear nights and tell us honestly how it went.</span><span lang="sv">Det vi ber om: gör några stjärnfixar klara nätter och berätta ärligt hur det gick.</span></p>
-      <p><span class="placeholder">[opt-in link from Play Console]</span></p>
+      <ol class="join">
+        <li><span lang="en">Join the tester group:</span><span lang="sv">Gå med i testargruppen:</span> <span class="placeholder">[Google Group link]</span></li>
+        <li><span lang="en">Then accept the invite on Google Play with the same Google account:</span><span lang="sv">Godkänn sedan inbjudan på Google Play med samma Google-konto:</span><br><a class="btn primary" href="https://play.google.com/apps/testing/se.lte.starways" target="_blank" rel="noopener"><span lang="en">Join the beta on Google Play</span><span lang="sv">Gå med i betan på Google Play</span></a></li>
+      </ol>
     </div>
   </div>
 </section>
@@ -242,7 +248,7 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
         <table>
           <tr><th>Name</th><td>Starways</td></tr>
           <tr><th>Tagline</th><td>When all other navigation fails</td></tr>
-          <tr><th>Platform</th><td>Android (Google Play)</td></tr>
+          <tr><th>Platform</th><td>Android (<a href="https://play.google.com/store/apps/details?id=se.lte.starways">Google Play</a>)</td></tr>
           <tr><th>Price</th><td>1 € / $1</td></tr>
           <tr><th>Network</th><td>None. No internet permission</td></tr>
           <tr><th>Sensors</th><td>Camera, accelerometer, gyro, compass, clock</td></tr>
