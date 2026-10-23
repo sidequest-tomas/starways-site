@@ -1,0 +1,66 @@
+[
+{
+"w": 1080,
+"h": 1920,
+"t": "Find your position from the stars",
+"s": "Fully offline. No GPS needed.",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-1-start.png",
+"out": "/home/claude/starways-site/store/phone/01-start.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Lock on sky",
+"s": "Starways recognises the constellations by itself",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-2-lock-on.png",
+"out": "/home/claude/starways-site/store/phone/02-lock-on.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "A blue dot on an offline map",
+"s": "With an honest uncertainty circle",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-3-map.png",
+"out": "/home/claude/starways-site/store/phone/03-map.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Calibrate for a tighter fix",
+"s": "Rotate the phone four times",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-4-map-calibrated.png",
+"out": "/home/claude/starways-site/store/phone/04-map-calibrated.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Track between star fixes",
+"s": "Steps and compass until the next star sync",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-5-track.png",
+"out": "/home/claude/starways-site/store/phone/05-track.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Night mode",
+"s": "Black and deep red keeps your night vision",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-6-night.png",
+"out": "/home/claude/starways-site/store/phone/06-night.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Simple by default",
+"s": "Advanced mode adds GPS comparison and Boat mode",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-7-settings.png",
+"out": "/home/claude/starways-site/store/phone/07-settings.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Boat mode",
+"s": "A 2-minute star fix with the main camera. Experimental.",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop-en/en-8-boat.png",
+"out": "/home/claude/starways-site/store/phone/08-boat.png"
+}
+]
