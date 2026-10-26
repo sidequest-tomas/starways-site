@@ -43,8 +43,24 @@
 "w": 1080,
 "h": 1920,
 "t": "Nattläge",
-"s": "Svart och djuprött, så att mörkerseendet består",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/6-nattlage-himlen.png",
+"s": "Bara rött ljus, så att mörkerseendet består",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/6-nattlage.png",
 "out": "/home/claude/starways-site/store/phone-sv/06-nattlage.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Enkel från början",
+"s": "Röstinstruktioner, rött nattläge och ett Avancerat läge när du vill ha mer",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/7-installningar.png",
+"out": "/home/claude/starways-site/store/phone-sv/07-installningar.png"
+},
+{
+"w": 1080,
+"h": 1920,
+"t": "Båtläge",
+"s": "En stjärnfix på 2 minuter med huvudkameran. Experimentellt.",
+"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/8-batlage.png",
+"out": "/home/claude/starways-site/store/phone-sv/08-batlage.png"
 }
 ]
