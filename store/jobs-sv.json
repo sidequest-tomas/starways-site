@@ -4,7 +4,7 @@
 "h": 1920,
 "t": "Hitta din position med stjärnorna",
 "s": "Helt utan nät. Ingen GPS behövs.",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/1-start.png",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/1-start.png",
 "out": "/home/claude/starways-site/store/phone-sv/01-start.png"
 },
 {
@@ -12,31 +12,31 @@
 "h": 1920,
 "t": "Låst på himlen",
 "s": "Appen känner själv igen stjärnbilderna",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/2-lock-on.png",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/2-lock-on.png",
 "out": "/home/claude/starways-site/store/phone-sv/02-lock-on.png"
 },
 {
 "w": 1080,
 "h": 1920,
 "t": "En blå prick på kartan",
-"s": "Offlinekarta med en ärlig osäkerhetscirkel",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/3-karta-okalibrerad.png",
+"s": "En kalibrerad fix, med dina sparade punkter",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/3-karta-kalibrerad.png",
 "out": "/home/claude/starways-site/store/phone-sv/03-karta.png"
 },
 {
 "w": 1080,
 "h": 1920,
-"t": "Kalibrera för en skarpare fix",
-"s": "Vrid telefonen fyra gånger",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/4-karta-kalibrerad.png",
-"out": "/home/claude/starways-site/store/phone-sv/04-karta-kalibrerad.png"
+"t": "Punkter och export",
+"s": "Bäring och avstånd, GPX till sjökortsappar, testlogg som CSV",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/4-punkter.png",
+"out": "/home/claude/starways-site/store/phone-sv/04-punkter.png"
 },
 {
 "w": 1080,
 "h": 1920,
 "t": "Spåra mellan stjärnfixarna",
 "s": "Steg och kompass fram till nästa stjärnsynk",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/5-spara.png",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/5-spara.png",
 "out": "/home/claude/starways-site/store/phone-sv/05-spara.png"
 },
 {
@@ -44,15 +44,15 @@
 "h": 1920,
 "t": "Nattläge",
 "s": "Bara rött ljus, så att mörkerseendet består",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/6-nattlage.png",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/6-nattlage.png",
 "out": "/home/claude/starways-site/store/phone-sv/06-nattlage.png"
 },
 {
 "w": 1080,
 "h": 1920,
-"t": "Enkel från början",
-"s": "Röstinstruktioner, rött nattläge och ett Avancerat läge när du vill ha mer",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/7-installningar.png",
+"t": "Byggd även för sjön",
+"s": "Horisontläge som en sextant, och GPS-vakt mot störningar",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/7-installningar.png",
 "out": "/home/claude/starways-site/store/phone-sv/07-installningar.png"
 },
 {
@@ -60,7 +60,7 @@
 "h": 1920,
 "t": "Båtläge",
 "s": "En stjärnfix på 2 minuter med huvudkameran. Experimentellt.",
-"img": "file:///tmp/claude-0/-home-claude-starways-site/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/crop/8-batlage.png",
+"img": "file:///tmp/claude-0/-home-claude/3ca9bd47-731d-59ab-907f-bf84bc16911d/scratchpad/c-sv/8-batlage.png",
 "out": "/home/claude/starways-site/store/phone-sv/08-batlage.png"
 }
 ]

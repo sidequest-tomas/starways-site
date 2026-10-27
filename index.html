@@ -7,7 +7,7 @@
 <meta name="description" content="Starways is an offline Android app that finds your position from the stars. No GPS, no signal, no internet permission.">
 <meta property="og:title" content="Starways">
 <meta property="og:description" content="Offline star navigation for Android. When all other navigation fails.">
-<meta property="og:image" content="img/lock-on-sky-540.jpg">
+<meta property="og:image" content="img/app-lock-on-540.jpg">
 <meta name="theme-color" content="#070b18">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="fonts.css">
@@ -157,9 +157,9 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
           <a class="btn ghost" href="https://play.google.com/store/apps/details?id=se.lte.starways" target="_blank" rel="noopener">Google Play</a>
           <a class="btn ghost" href="https://claude.ai/artifact/BktgjLXFUgqfmtFtrirfJZ" target="_blank" rel="noopener"><span lang="en">Try the web demo</span><span lang="sv">Prova webbdemon</span></a>
         </div>
-        <p class="coord"><span lang="en">Demo fix:</span><span lang="sv">Demofix:</span> <b>59.332° N, 18.074° E</b> · ±4.1 km · 47 <span lang="en">stars</span><span lang="sv">stjärnor</span></p>
+        <p class="coord"><span lang="en">Demo fix:</span><span lang="sv">Demofix:</span> <b>59.306° N, 18.113° E</b> · ±7.5 km <span lang="en">after calibration</span><span lang="sv">efter kalibrering</span></p>
       </div>
-      <div class="phone"><img src="img/lock-on-sky-540.jpg" width="540" height="1099" alt="Starways locked on the sky: Ursa Major, Draco, Boötes, Ursa Minor and Corona Borealis identified, 51 stars."></div>
+      <div class="phone"><img src="img/app-lock-on-540.jpg" width="540" height="1040" alt="Starways locked on the sky: constellations identified, 60 stars, Gemini in view, position shown with ±60 km before calibration."></div>
     </div>
   </div>
 </header>
@@ -226,8 +226,8 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
         <li><span lang="en"><b>Advanced mode.</b> Adds Compare GPS on the map and the GPS guard, so you can check a star fix against satellite navigation and spot jamming or spoofing. GPS comparisons also calibrate your step length.</span><span lang="sv"><b>Avancerat läge.</b> Lägger till Jämför GPS på kartan och GPS-vakten, så att du kan kontrollera stjärnfixen mot satellitnavigeringen och upptäcka störning eller förfalskning. Jämförelserna kalibrerar också din steglängd.</span></li>
         <li><span lang="en"><b>Boat mode</b> (in Advanced mode). A 2-minute measurement with the main camera that copes with a rolling deck. It follows the stars frame by frame and warns you if the boat turns. At sea, Track uses compass course and the speed you enter in knots instead of steps. Horizon mode takes the vertical from the sea horizon instead.</span><span lang="sv"><b>Båtläge</b> (i Avancerat läge). En mätning på 2 minuter med huvudkameran som klarar sjögång. Den följer stjärnorna bild för bild och varnar om båten girar. Till sjöss använder Spåra kompasskursen och farten du anger i knop i stället för steg. Horisontläget tar lodlinjen från havshorisonten i stället.</span></li>
       </ul>
-      <figure><img src="img/settings-en-540.jpg" width="540" height="1080" alt="Starways settings: night mode, voice instructions on, step length, star sync reminder, Advanced mode and Boat mode switched on" loading="lazy"><figcaption><span lang="en">Settings with Advanced mode and Boat mode on</span><span lang="sv">Inställningar med Avancerat läge och Båtläge påslagna</span></figcaption></figure>
-      <figure><img src="img/boat-mode-en-540.jpg" width="540" height="1080" alt="Boat mode measurement in night mode: 0:29 left, 60 star frames, locked on the stars, hold your course, yaw 0.0 degrees" loading="lazy"><figcaption><span lang="en">Boat mode: locked on the stars, hold your course</span><span lang="sv">Båtläge: låst på stjärnorna, håll kursen</span></figcaption></figure>
+      <figure><img src="img/settings-en-540.jpg" width="540" height="1040" alt="Starways settings in Advanced mode: boat mode with speed, horizon mode with eye height above the sea, and GPS guard switched on" loading="lazy"><figcaption><span lang="en">Advanced mode: boat mode, horizon mode and GPS guard</span><span lang="sv">Avancerat läge: båtläge, horisontläge och GPS-vakt</span></figcaption></figure>
+      <figure><img src="img/boat-mode-en-540.jpg" width="540" height="1040" alt="Boat mode measurement in night mode: 1:10 left, star frames counting, locked on the stars, hold your course" loading="lazy"><figcaption><span lang="en">Boat mode: locked on the stars, hold your course</span><span lang="sv">Båtläge: låst på stjärnorna, håll kursen</span></figcaption></figure>
     </div>
     <p class="note"><span lang="en">Boat mode is experimental. It has been tested in simulation, not yet on a real boat. Hold a steady course and speed while it measures, and calibrate the sensors in harbour or on land first.</span><span lang="sv">Båtläget är experimentellt. Det är testat i simulering men ännu inte på en riktig båt. Håll stadig kurs och fart medan det mäter, och kalibrera sensorerna i hamn eller på land först.</span></p>
   </div>
@@ -284,10 +284,10 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
       </div>
     </div>
     <div class="shots">
-      <figure><img src="img/lock-on-sky-540.jpg" width="540" height="1099" alt="Lock on sky with constellation lines" loading="lazy"><figcaption>Lock on sky: 51 stars identified in 2.0 s</figcaption></figure>
-      <figure><img src="img/map-calibrated-540.jpg" width="540" height="1099" alt="Offline map with blue dot at Stockholm, ±4.1 km after calibration, red dots are the four uncalibrated fixes" loading="lazy"><figcaption>After calibration: ±4.1 km</figcaption></figure>
-      <figure><img src="img/map-uncalibrated-540.jpg" width="540" height="1099" alt="Offline map with larger uncertainty circle before calibration" loading="lazy"><figcaption>Before calibration: ±56 km</figcaption></figure>
-      <figure><img src="img/switch-camera-540.jpg" width="540" height="1099" alt="Prompt to switch to the main camera when the selfie camera sees too few stars" loading="lazy"><figcaption>Too few stars: switch camera</figcaption></figure>
+      <figure><img src="img/app-lock-on-540.jpg" width="540" height="1040" alt="Lock on sky: constellation lines drawn, Gemini in view" loading="lazy"><figcaption>Lock on sky: the constellations are recognised</figcaption></figure>
+      <figure><img src="img/app-map-540.jpg" width="540" height="1040" alt="Offline map with blue dot near Stockholm, ±7.5 km after calibration, and a saved waypoint" loading="lazy"><figcaption>After calibration: ±7.5 km (demo)</figcaption></figure>
+      <figure><img src="img/app-waypoints-540.jpg" width="540" height="1040" alt="Waypoints and export: bearing and distance to a saved waypoint, GPX and CSV export" loading="lazy"><figcaption>Waypoints with bearing and distance, GPX and CSV export</figcaption></figure>
+      <figure><img src="img/app-night-540.jpg" width="540" height="1040" alt="Night mode: the map and Track in red only" loading="lazy"><figcaption>Night mode: red light only</figcaption></figure>
     </div>
   </div>
 </section>
