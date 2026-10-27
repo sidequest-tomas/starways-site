@@ -26,21 +26,28 @@ li{margin:0 0 8px}
 
 <section lang="en">
 <h1>Privacy policy</h1>
-<p class="date">Effective date: October 22, 2026 · Last updated: October 26, 2026</p>
+<p class="date">Effective date: October 22, 2026 · Last updated: October 27, 2026 (app version 1.1.0)</p>
 <p>This policy covers the Starways Android app, this website and the beta sign-up. In short: the app does not collect or share any personal data, and nothing leaves your phone. The app has no internet permission and is built to stay that way, so it cannot send anything from your phone.</p>
 
 <h2>What the app uses, and why</h2>
 <ul>
 <li><b>Camera.</b> Starways takes pictures of the night sky to find stars. The images are processed in memory on your phone and are not saved or sent anywhere.</li>
-<li><b>Motion and orientation sensors</b> (accelerometer, gyroscope, compass) and the phone's clock. These tell the app which way the camera points and when the picture was taken, which it needs to work out your position.</li>
-<li><b>Location (only in Advanced mode).</b> If you turn on Advanced mode and tap Compare GPS, the app reads your phone's satellite position once to show how far the star fix is from GPS. Android asks for your permission first. The position is only shown on screen and is never sent anywhere.</li>
-<li><b>Physical activity and notifications (only for Track).</b> When you turn on Track, the app uses the phone's step detector to count your steps, so Android asks for the physical activity permission. While Track is on, the app runs in the foreground and shows a notification so you can see that it is running, which is why it asks to show notifications. Step data is processed on your phone and is never sent anywhere.</li>
+<li><b>Sensors</b> (accelerometer, gyroscope, compass, light sensor, barometer) and the phone's clock. These tell the app which way the camera points and when the picture was taken, which it needs to work out your position. Sensors are only read while the app is in use, or while Track is on.</li>
+<li><b>Location (only in Advanced mode).</b> If you turn on Advanced mode and tap Compare GPS, the app reads your phone's satellite position to show how far the star fix is from GPS. Android asks for your permission first. The position is only shown on screen and is never sent anywhere.</li>
+<li><b>Physical activity and notifications (only for Track).</b> When you turn on Track, the app uses the phone's step detector to count your steps, so Android asks for the physical activity permission. While Track is on, the app runs in the foreground and shows a notification so you can see that it is running, which is why it asks to show notifications. Step data is processed on your phone and is never sent anywhere. The route only exists in the phone's memory while the app runs and is not saved.</li>
+<li><b>GPS guard (optional, in Advanced mode).</b> If you turn on the GPS guard, the app reads the satellites' signal strength, the receiver's noise level and the GPS position while the app is open, to warn you if GPS looks jammed or spoofed. It only keeps an average of normal signal strength on the phone. Nothing is sent anywhere.</li>
 <li><b>Text-to-speech (voice instructions).</b> Spoken instructions use the text-to-speech engine already installed on your phone, such as Google's or Samsung's. Starways only gives it fixed instruction text, like "turn the phone" or the accuracy of a fix, and never your position or any personal data. You can turn the voice off in Settings.</li>
 </ul>
 <p>All calculations happen on your phone. The app works the same in flight mode.</p>
 
 <h2>Data stored on your phone</h2>
-<p>The app saves things like your settings (including night brightness and whether the voice is on) and its sensor calibration in its own private storage on your phone. This data is not included in Android backups, so it never leaves the phone. It is deleted when you clear the app's data or uninstall the app.</p>
+<p>The app keeps the following in its own private storage on your phone:</p>
+<ul>
+<li>Settings: language, night mode and night brightness, step length, whether voice instructions and demo mode are on, and the GPS guard's average signal strength.</li>
+<li>Its sensor calibration, a small angle correction for your phone.</li>
+<li>The test log, with each fix's time, position, star count and the GPS position if there was one, and the waypoints you save.</li>
+</ul>
+<p>This data is not included in Android backups. The test log and waypoints leave the phone only if you tap Export and choose an app to share them with, for example as CSV or GPX. That app's own terms then apply. You can clear the log and delete waypoints at any time, and everything is deleted when you clear the app's data or uninstall the app.</p>
 
 <h2>What we collect</h2>
 <p>Nothing. The app has no accounts, ads, analytics, crash reporting or third-party tracking code.</p>

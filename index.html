@@ -107,6 +107,11 @@ th{color:var(--muted);font-weight:500;width:38%;padding-right:12px}
 .shots figure{margin:0;min-width:0}
 .shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--rule)}
 .shots figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.feat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.feat-grid h3{font-family:var(--display);font-weight:400;font-size:21px;color:var(--star);margin:0 0 8px}
+.feat-grid p{margin:0;font-size:15px}
+@media (max-width:900px){.feat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.feat-grid{grid-template-columns:minmax(0,1fr)}}
 .settings-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.6fr) minmax(0,.6fr);gap:28px;align-items:start}
 .settings-grid figure{margin:0;min-width:0}
 .settings-grid img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--rule)}
@@ -194,18 +199,32 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
   </div>
 </section>
 
+<section id="new">
+  <div class="wrap">
+    <h2><span lang="en">New in 1.1.0</span><span lang="sv">Nytt i 1.1.0</span></h2>
+    <p class="sec-lede"><span lang="en">More ways to get a fix, and more to do with it. Still no network at all.</span><span lang="sv">Fler sätt att få en fix, och mer att göra med den. Fortfarande helt utan nät.</span></p>
+    <div class="feat-grid">
+      <div class="card"><h3><span lang="en">The Moon and planets</span><span lang="sv">Månen och planeterna</span></h3><p><span lang="en">Venus, Mars, Jupiter and Saturn count as extra points of light, and the Moon's edge is measured in the image. That helps at twilight and when only a few stars show.</span><span lang="sv">Venus, Mars, Jupiter och Saturnus räknas som extra ljuspunkter, och månens kant mäts i bilden. Det hjälper i skymningen och när bara några få stjärnor syns.</span></p></div>
+      <div class="card"><h3><span lang="en">Horizon mode at sea</span><span lang="sv">Horisontläge till sjöss</span></h3><p><span lang="en">Aim the main camera at the sea horizon at dawn, dusk or by moonlight. The vertical comes from the horizon, as with a sextant, so no calibration is needed. You set your eye height above the water. Part of the experimental boat mode.</span><span lang="sv">Rikta huvudkameran mot havshorisonten i gryningen, skymningen eller i månsken. Lodlinjen tas från horisonten, som med en sextant, så ingen kalibrering behövs. Du anger ögonhöjden över vattnet. Ingår i det experimentella båtläget.</span></p></div>
+      <div class="card"><h3><span lang="en">GPS guard</span><span lang="sv">GPS-vakt</span></h3><p><span lang="en">Compares the satellites' signal strength and the receiver's noise level with what is normal, and the GPS position with the stars. It warns if GPS looks jammed or spoofed. Optional, in Advanced mode.</span><span lang="sv">Jämför satelliternas signalstyrka och mottagarens störnivå med det normala, och GPS-positionen med stjärnorna. Den varnar om GPS verkar störd eller förfalskad. Valfri, i Avancerat läge.</span></p></div>
+      <div class="card"><h3><span lang="en">Waypoints</span><span lang="sv">Punkter</span></h3><p><span lang="en">Save named positions and see bearing and distance to them on the map. Export waypoints and your route as GPX for chart and map apps.</span><span lang="sv">Spara namngivna positioner och se bäring och avstånd till dem på kartan. Exportera punkter och färdväg som GPX till sjökorts- och kartappar.</span></p></div>
+      <div class="card"><h3><span lang="en">Coordinates your way</span><span lang="sv">Koordinater som du vill</span></h3><p><span lang="en">Degrees-minutes-seconds, degrees and decimal minutes, decimal degrees, UTM, MGRS or SWEREF 99 TM.</span><span lang="sv">Grader-minuter-sekunder, grader och decimalminuter, decimalgrader, UTM, MGRS eller SWEREF 99 TM.</span></p></div>
+      <div class="card"><h3><span lang="en">Test log</span><span lang="sv">Testlogg</span></h3><p><span lang="en">Every fix is saved on the phone with time, mode, star count and the GPS position when there is one. Share it as CSV to compare accuracy.</span><span lang="sv">Varje fix sparas i telefonen med tid, läge, antal stjärnor och GPS-position när den finns. Dela den som CSV för att jämföra precisionen.</span></p></div>
+    </div>
+  </div>
+</section>
+
 <section id="settings">
   <div class="wrap">
     <h2><span lang="en">Settings for the field</span><span lang="sv">Inställningar för fältet</span></h2>
     <p class="sec-lede"><span lang="en">Everything is in one Settings dialog, opened from the gear on the start screen and the map. Advanced mode is off by default, so the app stays simple until you need more.</span><span lang="sv">Allt finns i en inställningsdialog som öppnas från kugghjulet på startskärmen och kartan. Avancerat läge är avstängt från början, så appen är enkel tills du behöver mer.</span></p>
-    <p class="note"><span lang="en"><b>New in 1.0.1:</b> brighter night mode with a brightness slider, and spoken instructions.</span><span lang="sv"><b>Nytt i 1.0.1:</b> ljusare nattläge med reglage för ljusstyrka, och talade instruktioner.</span></p>
     <div class="settings-grid">
       <ul class="checks">
         <li><span lang="en"><b>Night mode.</b> Red light only, so you keep your night vision. Set the brightness from 2 to 60 %, and the system bars are hidden so no other light leaks out.</span><span lang="sv"><b>Nattläge.</b> Bara rött ljus, så att du behåller mörkerseendet. Ljusstyrkan ställs från 2 till 60 %, och systemfälten döljs så att inget annat ljus läcker ut.</span></li>
         <li><span lang="en"><b>Voice.</b> Spoken instructions while you measure: how long it will take, when to turn the phone, measurement 1 of 4, and the result with its accuracy or what went wrong. Uses the phone's own text-to-speech, in Swedish or English. On by default, and you can turn it off.</span><span lang="sv"><b>Röst.</b> Talade instruktioner medan du mäter: hur lång tid det tar, när du ska vrida telefonen, mätning 1 av 4 och resultatet med precision eller vad som gick fel. Använder telefonens egen talsyntes, på svenska eller engelska. På från början, och du kan stänga av den.</span></li>
         <li><span lang="en"><b>Track.</b> Dead reckoning between star fixes, with your step length and a reminder to sync with the stars every 15 to 120 minutes.</span><span lang="sv"><b>Spåra.</b> Död räkning mellan stjärnfixarna, med din steglängd och en påminnelse om stjärnsynk var 15:e till 120:e minut.</span></li>
-        <li><span lang="en"><b>Advanced mode.</b> Adds Compare GPS on the map, so you can check a star fix against satellite navigation and spot jamming or spoofing. GPS comparisons also calibrate your step length.</span><span lang="sv"><b>Avancerat läge.</b> Lägger till Jämför GPS på kartan, så att du kan kontrollera stjärnfixen mot satellitnavigeringen och upptäcka störning eller förfalskning. Jämförelserna kalibrerar också din steglängd.</span></li>
-        <li><span lang="en"><b>Boat mode</b> (in Advanced mode). A 2-minute measurement with the main camera that copes with a rolling deck. It follows the stars frame by frame and warns you if the boat turns. At sea, Track uses compass course and the speed you enter in knots instead of steps.</span><span lang="sv"><b>Båtläge</b> (i Avancerat läge). En mätning på 2 minuter med huvudkameran som klarar sjögång. Den följer stjärnorna bild för bild och varnar om båten girar. Till sjöss använder Spåra kompasskursen och farten du anger i knop i stället för steg.</span></li>
+        <li><span lang="en"><b>Advanced mode.</b> Adds Compare GPS on the map and the GPS guard, so you can check a star fix against satellite navigation and spot jamming or spoofing. GPS comparisons also calibrate your step length.</span><span lang="sv"><b>Avancerat läge.</b> Lägger till Jämför GPS på kartan och GPS-vakten, så att du kan kontrollera stjärnfixen mot satellitnavigeringen och upptäcka störning eller förfalskning. Jämförelserna kalibrerar också din steglängd.</span></li>
+        <li><span lang="en"><b>Boat mode</b> (in Advanced mode). A 2-minute measurement with the main camera that copes with a rolling deck. It follows the stars frame by frame and warns you if the boat turns. At sea, Track uses compass course and the speed you enter in knots instead of steps. Horizon mode takes the vertical from the sea horizon instead.</span><span lang="sv"><b>Båtläge</b> (i Avancerat läge). En mätning på 2 minuter med huvudkameran som klarar sjögång. Den följer stjärnorna bild för bild och varnar om båten girar. Till sjöss använder Spåra kompasskursen och farten du anger i knop i stället för steg. Horisontläget tar lodlinjen från havshorisonten i stället.</span></li>
       </ul>
       <figure><img src="img/settings-en-540.jpg" width="540" height="1080" alt="Starways settings: night mode, voice instructions on, step length, star sync reminder, Advanced mode and Boat mode switched on" loading="lazy"><figcaption><span lang="en">Settings with Advanced mode and Boat mode on</span><span lang="sv">Inställningar med Avancerat läge och Båtläge påslagna</span></figcaption></figure>
       <figure><img src="img/boat-mode-en-540.jpg" width="540" height="1080" alt="Boat mode measurement in night mode: 0:29 left, 60 star frames, locked on the stars, hold your course, yaw 0.0 degrees" loading="lazy"><figcaption><span lang="en">Boat mode: locked on the stars, hold your course</span><span lang="sv">Båtläge: låst på stjärnorna, håll kursen</span></figcaption></figure>
@@ -258,7 +277,7 @@ footer{padding-block:36px;color:var(--muted);font-size:14px}
           <tr><th>Price</th><td>1 €, converted to local prices outside the euro area</td></tr>
           <tr><th>Network</th><td>None. No internet permission</td></tr>
           <tr><th>Sensors</th><td>Camera, accelerometer, gyro, compass, clock</td></tr>
-          <tr><th>Version</th><td>1.0.1, closed beta on Google Play</td></tr>
+          <tr><th>Version</th><td>1.1.0, beta on Google Play</td></tr>
           <tr><th>Guidance</th><td>Spoken instructions in Swedish or English, red night mode</td></tr>
           <tr><th>Languages</th><td>English, Swedish</td></tr>
         </table>
